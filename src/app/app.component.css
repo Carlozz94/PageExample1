@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
 * {
     box-sizing: border-box;
     
@@ -6,9 +10,90 @@
 body{
     background: #ffffff;
     color :#000000;
-    font-family: 'Itim', cursive;
-    padding: 0 1.5em;
+    padding-top: 56px;
+}
 
+/* navbar */
+
+.navbar{
+    background:#fff0cd;;
+}
+
+/* Estilos de contenedor principal*/
+.pagewrap {
+    background: #fff0cd;
+    color :#000000;
+    
+}
+
+#title-header{
+    font-size: 5rem;
+    font-family: Bitter;
+    margin-top: 12rem;
+    color: #0a182c;
+}
+
+
+@media screen and (min-width: 513px) and (max-width: 1000px) {
+    #title-header {
+      font-size: 3rem;
+      font-family: Bitter;
+    }
+  }
+
+
+.content-title{
+    text-align: center;
+}
+
+.title-text{
+    font-size: 2rem;
+    margin-top: 12rem;
+    font-family: Bitter;
+    color: #0a182c;
+}
+
+.body-text{
+    font-family:system-ui;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+    text-align: justify;
+}
+
+.content-text{
+    font-family:sistem-ui;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+
+.hr-title {
+    border: none;
+    border-top: 5px solid #15ff00; 
+    margin: 20px 0;
+    width: 30%;
+    margin-left: 35%;
+    transition: width 0.3s ease; /* Animación suave para el cambio de ancho */
+}
+
+.hr-title:hover {
+    width: 70%; /* Aumenta el ancho cuando se pasa el mouse */
+    margin-left: 15%; /* Ajusta el margen para centrar la línea cuando se expande */
+}
+
+.hr-text {
+    border:none;
+    border-top: 5px solid #15ff00; 
+    margin: 20px 0;
+    width: 25%;
+    
+}
+
+.expanded {
+    width: 70%; /* Ancho aumentado cuando se activa la clase */
+    margin-left: 15%; /* Ajusta el margen para centrar la línea cuando se expande */
 }
 
 .content {
@@ -20,7 +105,7 @@ body{
 
 .logo{
     text-align: center;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 .logo span{
@@ -36,7 +121,9 @@ body{
 }
 
 .contact-form{
-    background: #f5f3e6;
+    background: #0a182c;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 /* Separar form en 2  */ 
@@ -53,6 +140,7 @@ body{
 .contact-form form p {
     margin: 0;
     padding: 1em;
+    color: #fff;
 }
 
 
@@ -64,21 +152,23 @@ body{
     border: none;
     background: none;
     outline: 0;
-    color: #030303;
+    color: #ffffff;
     border-bottom: 1px solid #6ddf0f;
+
 }
 
 .contact-form form button {
-    background-color:#fb5a00;
+    background-color:#38b972;
     color: #000;
     border: 0;
     text-transform: uppercase;
     padding: 1em;
+    border-radius: 25px;
 }
 
 .contact-form form button:hover,
 .contact-form form button:focus{
-    background: #38b972;
+    background: #247549;;
     color: #fff;
     transition: background-color 1s ease-out;
     -webkit-transition: background-color 1s ease-out;
@@ -89,7 +179,9 @@ body{
 }
 
 .contact-info{
-    background: #ffffff;
+    background: #c0b499;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .contact-info h4,
@@ -97,6 +189,11 @@ body{
 .contact-info p {
     text-align: center;
     margin: 0 0 1rem 0;
+    font-size: 1rem;
+}
+
+.contact-info li{
+    font-size: 1rem;
 }
 
 .contact-info ul {
@@ -112,7 +209,7 @@ body{
 
 @media (min-width:  700px){
     body{
-        padding: 0 4rem;
+        padding: 0;
     }
     
     .contact-wrapper{
@@ -126,7 +223,7 @@ body{
     .contact-info h4,
     .contact-info ul,
     .contact-info p{
-        padding: 1em;
+        padding-top: 3em;
     }
     .contact-info img{
         display: grid;
@@ -138,4 +235,9 @@ body{
 
 #mail{
     opacity: 0;
+}
+
+.form input{
+ width: 50%;
+
 }

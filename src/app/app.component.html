@@ -2,285 +2,196 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-
-  
 </head>
-<body>
-    <!-- Navbar -->
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container-fluid">
-          <!-- Icono -->
-          <a class="navbar-brand" href="../index.html">
-            <img src="../assets/images/logo.jpg" alt="Logo" height="50px">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <div class="collapse navbar-collapse" id="menu">
-            <hr class="text-white-50">
-    
+
+
+
+<div class="pagewrap">
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container-fluid">
+        <!-- Icono -->
+        <a class="navbar-brand" href="../index.html">
+          <img src="../assets/images/logo.jpg" height="40px"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <hr class="text-white-50">
+
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item col-4 col-md-auto p-1">
+              <a class="nav-link" href="#">Inicio</a>
+              
+            </li>
+            <br>
+            <li class="nav-item col-4 col-md-auto p-1">
+              <a class="nav-link" href="#about-us">Nosotros</a>
+            </li>
+            <li class="nav-item col-4 col-md-auto p-1">
+              <a class="nav-link" href="#contact">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M2.678 11.894a1 1 0 0 1 .287.801 11 11 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8 8 0 0 0 8 14c3.996 0 7-2.807 7-6s-3.004-6-7-6-7 2.808-7 6c0 1.468.617 2.83 1.678 3.894m-.493 3.905a22 22 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a10 10 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105" />
+                </svg>
+                Contactanos
+              </a>
+            </li>
+          </ul>
+
+          <!-- Botón Hire-Me!! -->
+          <ul class="navbar-nav ms-auto">
             <!-- Enlaces redes sociales -->
-            <ul class="navbar-nav flex-row flex-wrap text-light me-auto">
-              <li class="nav-item col-4 col-md-auto p-1">
-                <a class="nav-link" href="#">
-                  <i class="bi bi-facebook"></i>
-                  <small class="d-md-none ms-0">Facebook</small>
-                </a>
-              </li>
-              <li class="nav-item col-4 col-md-auto p-1">
-                <a class="nav-link" href="#">
-                  <i class="bi bi-whatsapp"></i>
-                  <small class="d-md-none ms-0">Whatsapp</small>
-                </a>
-              </li>
-              <li class="nav-item col-4 col-md-auto p-1">
-                <a class="nav-link" href="#">
-                  <i class="bi bi-github"></i>
-                  <small class="d-md-none ms-0">GitHub</small>
-                </a>
-              </li>
-            </ul>
-    
-            <!-- Botón Hire-Me!! -->
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item col-4 col-md-auto p-1">
-                <a class="nav-link" href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
-                    <path d="M2.678 11.894a1 1 0 0 1 .287.801 11 11 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8 8 0 0 0 8 14c3.996 0 7-2.807 7-6s-3.004-6-7-6-7 2.808-7 6c0 1.468.617 2.83 1.678 3.894m-.493 3.905a22 22 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a10 10 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105"/>
-                  </svg>
-                  Hire-Me!!
-                </a>
-              </li>
-            </ul>
-          </div>
+            <li class="nav-item col-4 col-md-auto p-1">
+              <a class="nav-link" href="#">
+                <i class="bi bi-facebook"> </i>
+                <small class="d-md-none ms-0"> Facebook</small>
+              </a>
+            </li>
+            <li class="nav-item col-4 col-md-auto p-1">
+              <a class="nav-link" href="#">
+                <i class="bi bi-whatsapp"> </i>
+                <small class="d-md-none ms-0"> Whatsapp</small>
+              </a>
+            </li>
+            <li class="nav-item col-4 col-md-auto p-1">
+              <a class="nav-link" href="#">
+                <i class="bi bi-github"> </i>
+                <small class="d-md-none ms-0"> GitHub</small>
+              </a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Home -->
-     <div class="content">
+  <!-- Home -->
+  <div class="content content-title ">
+    <h1 id="title-header"><b> Hola</b>, Bienvenido a nuestra pagina web.</h1>
+    <hr class="hr-title">
+    <h1 class="content-text">Desarrolladores y diseñadores web con experiencia desde
+      2018.</h1>
+  </div>
 
-      <h1>Hola, Bienvenido a nuestra pagina web</h1>
-     </div>
-
-     <!-- abour us -->
-     <div class="content">
-
-      <h1>Hola, nosotros somos desarrolladores, diseñadores quienes hemos estado desarrollando para la web desde el 2018</h1>
-     </div>
-
-    <!-- Contact -->
+  <!-- abour us -->
+  <section id="about-us">
     <div class="content">
-
-        <h1 class="logo">Contacto</h1>
-
-        <div class="contact-wrapper animated bounceInUp">
-
-            <div class="contact-form">
-                <h3>CONTÁCTANOS</h3>
-                <h3>NOS ENCANTARÍA ESCUCHARTE</h3>
-                <br>
-                <form id="form" action="#" class="form">
-                    <p>
-                        <label for="firstName">Nombre(s)</label>
-                        <input type="text" name="firstName" id="firstName" required>
-                    </p>
-                    <p>
-                        <label for="lastName">Apellidos</label>
-                        <input type="text" name="lastName" id="lastName" required>
-                    </p>
-                    <p>
-                        <label for="email">Email</label>
-                        <input type="email" placeholder="ejemplo@live.com" name="email" required>
-                    </p>
-                    <p>
-                        <label for="phone">Telefono</label>
-                        <input type="tel" name="phone" id="phone" placeholder="(55)-1234-5678" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" required>
-                    </p>
-                    <p class="block">
-                        <label for="affair">Asunto</label>
-                        <input type="text" name="affair" required>
-                    </p>
-                    <p class="block">
-                        <label for="message">Mensaje</label>
-                        <textarea name="message" id="message" rows="3" required></textarea>
-                    </p>
-                    <p>
-                        <button type="submit" value="limpiarFormulario">
-                            Enviar
-                        </button>
-                    </p>
-                </form>
-                <a href="mailto:cazc.zarate94@gmail.com" id="mail"></a>
-
-                </div>
-                <div class="contact-info">
-
-                  <!--  <img class="img" src="assets/contacto/portada.jpg" alt="vestido" >-->
-                    
-                    <ul>
-                        <h4>HORARIOS DE ATENCIÓN</h4>
-                        <i class="fa-solid fa-calendar-days"></i>
-                        <li> 
-                            De lunes a viernes de 9:00 a 21:00
-                            Sabado y Domingo de 9:30 a 21:30
-                        </li>
-                        <h4>LLÁMANOS</h4>
-                        <i class="fa-solid fa-phone"></i>
-                        <li>
-                            800 128 4567
-                        </li>
-                        <h4>O CONTÁCTANOS  VÍA E-MAIL</h4>
-                        <i class="fa-solid fa-envelope"></i>
-                        <li>
-                            atencion.email.com
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
+      <h1 class="title-text"><b>¿Quienes somos?</b></h1>
+      <hr class="hr-text">
+      <h2 class="body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt necessitatibus quo
+        laudantium cumque, earum veniam molestiae harum ea hic ad cupiditate deserunt saepe eos ipsa odit modi soluta
+        totam a!
+        Et cumque facilis tempore voluptas odit veniam fugiat rerum. Velit explicabo vero itaque error, doloremque hic
+        libero inventore eum aliquam ab, voluptas tempore odit! Dolore laboriosam aspernatur eveniet nulla sed?
+        Commodi quae veritatis corporis sequi reiciendis eligendi possimus, tempora recusandae a repudiandae sint fuga
+        et voluptatem aliquam nulla harum animi fugit quos iusto? Tempora maxime nobis ab. Deserunt, illum provident?
+        Blanditiis, deserunt vitae tempore eum repellat dolor maxime numquam soluta alias iure, unde laudantium ratione?
+        Sit reprehenderit mollitia praesentium voluptate sint ad cum distinctio fugiat doloremque quod, dignissimos
+        voluptatem velit.</h2>
+      <hr>
     </div>
+  </section>
 
-    <!--**********************Footer******************-->
-    <footer class="bg-black">
-      <nav class="d-flex justify-content-evenly text-white text-center">
-        <a class="navbar-brand d-lg-none" href="/" target="_blank">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="white"
-            class="bi bi-house-door"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"
-            />
-          </svg>
-          <p>Inicio</p>
-        </a>
 
-        <a class="navbar-brand d-lg-none" href="/">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="white"
-            class="bi bi-shop"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"
-            />
-          </svg>
-          <p>Compras</p>
-        </a>
 
-        <a class="navbar-brand d-lg-none" href="/">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="white"
-            class="bi bi-person-circle"
-            viewBox="0 0 16 16"
-          >
-            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-            <path
-              fill-rule="evenodd"
-              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
-            />
-          </svg>
-          <p>Login</p>
-        </a>
+  <!-- Contact -->
 
-        <a class="navbar-brand d-none d-lg-inline" href="../AboutUs/aboutUs.html">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="white"
-            class="bi bi-info-circle-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
-            />
-          </svg>
-          <p>Acerca de nosotros</p>
-        </a>
+  <section id="contact">
 
-        <a class="navbar-brand d-none d-lg-inline" href="../Contacto/contacto.html">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="white"
-            class="bi bi-envelope-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
-            />
-          </svg>
-          <p>Contacto</p>
-        </a>
+    <div class="content">
+      <h1 class="title-text"><b>Nos encantaria escucharte.</b> </h1>
+      <hr class="hr-text">
 
-        <a class="navbar-brand d-none d-lg-inline" href="/">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="white"
-            class="bi bi-facebook"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="white"
-            class="bi bi-twitter"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="white"
-            class="bi bi-instagram"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-            />
-          </svg>
-          <p>Redes sociales</p>
-        </a>
+      <div class="contact-wrapper animated bounceInUp">
+        <div class="contact-form">
 
-      </nav>
-      <h6 class="derechos_reser" style="text-align: center; color:white;">© Empresa2024. Todos los derechos reservados</h6>
-    </footer>
-    
+          <br>
+          
+          <form id="form" action="#" class="form">
+            <p>
+              <label for="firstName">Nombre(s)</label>
+              <input type="text" name="firstName" id="firstName" required>
+            </p>
+            <p>
+              <label for="lastName">Apellidos</label>
+              <input type="text" name="lastName" id="lastName" required>
+            </p>
+            <p>
+              <label for="email">Email</label>
+              <input type="email" placeholder="ejemplo@live.com" name="email" required>
+            </p>
+            <p>
+              <label for="phone">Telefono</label>
+              <input type="tel" name="phone" id="phone" placeholder="(55)-1234-5678"
+                pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" required>
+            </p>
+            <p class="block">
+              <label for="affair">Asunto</label>
+              <input type="text" name="affair" required>
+            </p>
+            <p class="block">
+              <label for="message">Mensaje</label>
+              <textarea name="message" id="message" rows="3" required></textarea>
+            </p>
+            <p>
+              <button type="submit" value="limpiarFormulario">
+                Enviar
+              </button>
+            </p>
+          </form>
+          <a href="mailto:cazc.zarate94@gmail.com" id="mail"></a>
+
+        </div>
+        <div class="contact-info">
+
+          <!--  <img class="img" src="assets/contacto/portada.jpg" alt="vestido" >-->
+
+          <ul>
+            <h4 class="title-text"><b>HORARIOS DE ATENCIÓN</b></h4>
+            <i class="fa-solid fa-calendar-days"></i>
+            <li>
+              De lunes a viernes de 9:00 a 21:00
+              Sabado y Domingo de 9:30 a 21:30
+            </li>
+            <h4 class="title-text"><b>LLÁMANOS</b></h4>
+            <i class="fa-solid fa-phone"></i>
+            <li>
+              800 128 4567
+            </li>
+            <h4 class="title-text"><b>O CONTÁCTANOS VÍA E-MAIL</b></h4>
+            <i class="fa-solid fa-envelope"></i>
+            <li>
+              atencion.email.com
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--**********************Footer******************-->
+  <footer>
+  </footer>
+
   <!--script para formulario-->
   <script src="scriptContacto.js"></script>
   <!--FontAwesome-->
   <script src="https://kit.fontawesome.com/d9a5ba028d.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap Script-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 
-   <!-- Bootstrap Script-->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    
-</body>
+</div>
