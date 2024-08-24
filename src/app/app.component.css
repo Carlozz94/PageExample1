@@ -16,12 +16,12 @@ body{
 /* navbar */
 
 .navbar{
-    background:#fff0cd;;
+    background:#cde7ff;
 }
 
 /* Estilos de contenedor principal*/
 .pagewrap {
-    background: #fff0cd;
+    background: #cde7ff;
     color :#000000;
     
 }
@@ -71,7 +71,7 @@ body{
 
 .hr-title {
     border: none;
-    border-top: 5px solid #15ff00; 
+    border-top: 5px solid #ae00ff; 
     margin: 20px 0;
     width: 30%;
     margin-left: 35%;
@@ -85,7 +85,7 @@ body{
 
 .hr-text {
     border:none;
-    border-top: 5px solid #15ff00; 
+    border-top: 5px solid #ae00ff; 
     margin: 20px 0;
     width: 25%;
     
@@ -153,12 +153,12 @@ body{
     background: none;
     outline: 0;
     color: #ffffff;
-    border-bottom: 1px solid #6ddf0f;
+    border-bottom: 1px solid #ae00ff;
 
 }
 
 .contact-form form button {
-    background-color:#38b972;
+    background-color:#4bbef3;
     color: #000;
     border: 0;
     text-transform: uppercase;
@@ -168,7 +168,7 @@ body{
 
 .contact-form form button:hover,
 .contact-form form button:focus{
-    background: #247549;;
+    background: #2b6c8a;
     color: #fff;
     transition: background-color 1s ease-out;
     -webkit-transition: background-color 1s ease-out;
@@ -179,7 +179,7 @@ body{
 }
 
 .contact-info{
-    background: #c0b499;
+    background: #88579e;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
