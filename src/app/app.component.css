@@ -16,8 +16,15 @@ body{
 /* navbar */
 
 .navbar{
-    background:#cde7ff;
+    background:#cde7ffef;
 }
+
+.nav-link{
+    color: #000;
+    font-size: 1.15rem;
+}
+
+
 
 /* Estilos de contenedor principal*/
 .pagewrap {
@@ -75,13 +82,8 @@ body{
     margin: 20px 0;
     width: 30%;
     margin-left: 35%;
-    transition: width 0.3s ease; /* Animación suave para el cambio de ancho */
 }
 
-.hr-title:hover {
-    width: 70%; /* Aumenta el ancho cuando se pasa el mouse */
-    margin-left: 15%; /* Ajusta el margen para centrar la línea cuando se expande */
-}
 
 .hr-text {
     border:none;
